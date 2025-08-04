@@ -39,7 +39,7 @@ function prepairGoods(goods, sortField) {
 export const App = () => {
   const [sortGoods, setSortGoods] = useState('');
   let visibleGoods = prepairGoods(goodsFromServer, sortGoods);
-  const [reversed, setReversed] = useState(null);
+  const [reversed, setReversed] = useState(false);
 
   if (reversed) {
     visibleGoods = visibleGoods.toReversed();
